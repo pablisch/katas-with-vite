@@ -11,7 +11,7 @@
 // L = ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"] or ....
 // You will be given a stocklist (e.g. : L) and a list of categories in capital letters e.g :
 
-// M = {"A", "B", "C", "W"} 
+// M = {"A", "B", "C", "W"}
 // or
 // M = ["A", "B", "C", "W"] or ...
 // and your task is to find all the books of L with codes belonging to each category of M and to sum their quantity according to each category.
@@ -29,7 +29,7 @@
 
 const stockReport = (listOfArt, listOfCat) => {
   if (!listOfArt.length || !listOfCat.length) return '';
-  const report = []
+  const report = [];
   listOfCat.forEach((cat) => {
     const amount = listOfArt.reduce((acc, curr) => {
       if (curr[0] === cat) {
@@ -37,19 +37,29 @@ const stockReport = (listOfArt, listOfCat) => {
         return acc;
       }
       return acc;
-    }, 0)
-    report.push(`(${cat} : ${amount})`)
-  })
+    }, 0);
+    report.push(`(${cat} : ${amount})`);
+  });
   return report.join(' - ');
-}
+};
 
 // Codewars popular suggestion worth looking into
 function stockList(listOfArt, listOfCat) {
-  if (!listOfArt.length || !listOfCat.length) return ''
-  return listOfCat.map(w => {
-    const s = listOfArt.reduce((a, b) => a + (b.charAt(0) === w ? +b.split(' ')[1] : 0), 0)
-    return `(${w} : ${s})`
-  }).join(' - ')
+  if (!listOfArt.length || !listOfCat.length) return '';
+  return listOfCat
+    .map((w) => {
+      const s = listOfArt.reduce(
+        (a, b) => a + (b.charAt(0) === w ? +b.split(' ')[1] : 0),
+        0
+      );
+      return `(${w} : ${s})`;
+    })
+    .join(' - ');
 }
 
-console.log(stockReport(["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"], ["A", "B", "C", "W"]))
+console.log(
+  stockReport(
+    ['ABART 20', 'CDXEF 50', 'BKWRK 25', 'BTSQZ 89', 'DRTYM 60'],
+    ['A', 'B', 'C', 'W']
+  )
+);
