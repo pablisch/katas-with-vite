@@ -1,5 +1,5 @@
-ççimport { describe } from 'vitest';
-import {roundUpToFive} from './roundUpToFive';
+import { describe } from 'vitest';
+import { roundUpToFive } from './roundUpToFive';
 
 describe('roundUpToFive()', () => {
   test.each([
@@ -10,7 +10,10 @@ describe('roundUpToFive()', () => {
     [30, 30],
     [-2, 0],
     [-5, -5],
-  ])('should return the the input rounded up to the nearest mulitple of 5', (num, expectedNum) => {
-    expect(roundUpToFive(num)).toBe(expectedNum)
-  })
-})
+  ])(
+    'should return the the input rounded up to the nearest mulitple of 5',
+    (num, expectedNum) => {
+      expect(roundUpToFive(num)).toBe(expectedNum);
+    }
+  );
+});
