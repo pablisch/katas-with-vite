@@ -19,4 +19,4 @@ function solution(picture) {
   return picture;
 }
 
-console.log(solution(["abc", "ded"]))
+// console.log(solution(["abc", "ded"]))

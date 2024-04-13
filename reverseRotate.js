@@ -30,4 +30,4 @@ function reverseRotate(str, sz) {
   return chunks.flat().join('');
 }
 
-console.log(reverseRotate('1234569876541', 6));
+// console.log(reverseRotate('1234569876541', 6));

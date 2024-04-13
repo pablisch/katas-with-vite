@@ -64,6 +64,6 @@ var isValid2 = function (s) {
   return true;
 };
 
-console.log(isValid("()[]{}"));
-console.log(isValid("(]"));
-console.log(isValid('{[]}'));
+// console.log(isValid("()[]{}"));
+// console.log(isValid("(]"));
+// console.log(isValid('{[]}'));

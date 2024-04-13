@@ -8,4 +8,4 @@ export const countOccurrences = (array) => {
   return countObject;
 };
 
-console.log(countOccurrences(['and', 'the', 'cat', 'and', 'cat', 'cat', 'hen', 'and', 'cat']))
+// console.log(countOccurrences(['and', 'the', 'cat', 'and', 'cat', 'cat', 'hen', 'and', 'cat']))

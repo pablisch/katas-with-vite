@@ -22,9 +22,9 @@ export default factorial;
 
 const input = 5;
 
-console.log(
-  input * factorial(input -1)
-)
-console.log(
-  factorial(input)
-)
+// console.log(
+//   input * factorial(input -1)
+// )
+// console.log(
+//   factorial(input)
+// )

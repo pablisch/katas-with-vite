@@ -15,7 +15,7 @@ export const increasingSequence = (sequence) => {
   const sortedSequence = [...sequence].sort((a, b) => a - b)
   // console.log(sortedSequence)
 
-  console.log(sequence, sortedSequence);
+  // console.log(sequence, sortedSequence);
   return JSON.stringify(sequence) === JSON.stringify(sortedSequence) && (new Set(sequence)).size === sequence.length;
 };
 

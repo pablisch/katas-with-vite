@@ -40,4 +40,4 @@ const alphabetPosition2 = (string) => {
   return stringPositions.join(' ')
 }
 
-console.log(alphabetPosition('Hello'))
+// console.log(alphabetPosition('Hello'))

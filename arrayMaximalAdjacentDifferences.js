@@ -18,4 +18,4 @@ function solution(inputArray) {
   }, 0)
 }
 
-console.log(solution([2, 4, 1, 0]))
+// console.log(solution([2, 4, 1, 0]))
