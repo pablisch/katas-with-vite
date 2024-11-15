@@ -1,4 +1,4 @@
-import { getMaxDiff } from "./maxLengthDifference";
+import { getMaxDiff } from "../src/maxLengthDifference.js";
 
 describe('getMaxDiff()', () => {
   test.each([

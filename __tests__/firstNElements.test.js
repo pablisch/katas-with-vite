@@ -1,4 +1,4 @@
-import { getFirstNElements } from './firstNElements';
+import { getFirstNElements } from '../src/firstNElements.js';
 
 describe('getFirstNElements()', () => {
   test.each([[[0, 1, 2, 3, 5, 8, 13], 3, [0, 1, 2]]])(

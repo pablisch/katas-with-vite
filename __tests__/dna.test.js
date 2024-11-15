@@ -1,4 +1,4 @@
-import { translateDna } from "./dna";
+import { translateDna } from "../src/dna.js";
 
 describe('translateDna()', () => {
   test.each([
