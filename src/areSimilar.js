@@ -38,7 +38,7 @@ function solution(a, b) {
   return JSON.stringify(a) === JSON.stringify(b);
 }
 
-console.log(solution([1, 2, 3], [1, 2, 3]))
-console.log(solution([1, 2, 3], [2, 1, 3]))
-console.log(solution([1, 2, 2], [2, 1, 1]))
-console.log(solution([1, 1, 4], [1, 2, 3]))
+// console.log(solution([1, 2, 3], [1, 2, 3]))
+// console.log(solution([1, 2, 3], [2, 1, 3]))
+// console.log(solution([1, 2, 2], [2, 1, 1]))
+// console.log(solution([1, 1, 4], [1, 2, 3]))

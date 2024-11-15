@@ -100,4 +100,4 @@ var romanToInt3 = function(s) {
   return count;
 };
 
-console.log(romanToInt("MCMXCIV"));
+// console.log(romanToInt("MCMXCIV"));

@@ -164,26 +164,26 @@ export class LinkedList {
 }
 
 const node = new Node(5);
-console.log('node', node);
+// console.log('node', node);
 
 const list = new LinkedList();
-console.log(list.isEmpty());
-console.log(list.getSize());
-console.log(list.prepend(5));
-console.log(list.prepend(4));
-console.log(list.prepend(3));
-console.log(list.append(7));
-console.log(list.append(8));
-console.log(list.insertAt(6, 3));
-console.log(list.insertAt(2, 0));
-console.log(list.insertAt(9, 7));
-console.log(list.deleteAt(0));
-console.log(list.deleteAt(3));
-console.log(list.deleteAt(3));
-console.log(list.deleteAt(4));
-console.log(list.deleteAt(4));
-console.log(list.deleteValue(3));
-console.log(list.deleteValue(5));
-console.log(list.print());
-console.log(list.value)
+// console.log(list.isEmpty());
+// console.log(list.getSize());
+// console.log(list.prepend(5));
+// console.log(list.prepend(4));
+// console.log(list.prepend(3));
+// console.log(list.append(7));
+// console.log(list.append(8));
+// console.log(list.insertAt(6, 3));
+// console.log(list.insertAt(2, 0));
+// console.log(list.insertAt(9, 7));
+// console.log(list.deleteAt(0));
+// console.log(list.deleteAt(3));
+// console.log(list.deleteAt(3));
+// console.log(list.deleteAt(4));
+// console.log(list.deleteAt(4));
+// console.log(list.deleteValue(3));
+// console.log(list.deleteValue(5));
+// console.log(list.print());
+// console.log(list.value)
 // if (index < 0 || index > this.size) {}

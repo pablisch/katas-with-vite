@@ -5,4 +5,4 @@ export const swapArrayElements = (array, index1, index2) => {
   return array;
 }
 
-console.log(swapArrayElements([1, 2, 3, 4, 5, 6], 2, 4));
+// console.log(swapArrayElements([1, 2, 3, 4, 5, 6], 2, 4));

@@ -27,4 +27,4 @@ function solution(inputString) {
   return oddCount < 2;
 }
 
-console.log(solution('abbcccddddccc'))
+// console.log(solution('abbcccddddccc'))

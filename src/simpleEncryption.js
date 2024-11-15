@@ -28,5 +28,5 @@ const unencrypt = (str, num) => {
   return str
 }
 
-console.log(encrypt('135024', 2))
-console.log(unencrypt('012345', 2))
+// console.log(encrypt('135024', 2))
+// console.log(unencrypt('012345', 2))

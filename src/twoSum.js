@@ -41,5 +41,5 @@ const twoSum2 = function (nums, target) {
   return [firstNumIndex, nums.indexOf(num)]
 };
 
-console.log(twoSum([2, 7, 11, 15], 9));
-console.log(twoSum([2, 7, 11, 7, 15], 14));
+// console.log(twoSum([2, 7, 11, 15], 9));
+// console.log(twoSum([2, 7, 11, 7, 15], 14));
