@@ -1,4 +1,4 @@
-import { getLength, getFirst, getLast, pushElement, pushElement2, popElement, popElement2 } from './basicDataTypes';
+import { getLength, getFirst, getLast, pushElement, pushElement2, popElement, popElement2 } from '../src/basicDataTypes.js';
 
 describe('getLength()', () => {
   test('should return the length of an array', () => {

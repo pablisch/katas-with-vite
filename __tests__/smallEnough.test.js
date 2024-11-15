@@ -1,4 +1,4 @@
-import smallEnough from './smallEnough.js';
+import smallEnough from '../src/smallEnough.js';
 
 describe('smallEnough()', () => {
   test('should return true when the limit is not exceeded', () => {

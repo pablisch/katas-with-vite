@@ -1,4 +1,4 @@
-import keepHydarating from './keepHydarating';
+import keepHydarating from '../src/keepHydarating.js';
 
 describe('keepHydarating', () => {
   test('should return the correct amount of water to hydrate rounded down', () => {

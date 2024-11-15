@@ -1,4 +1,4 @@
-import sumDigits from './sumDigits';
+import sumDigits from '../src/sumDigits.js';
 
 describe('sumDigits()', () => {
   test("should return the sum of a number's digits", () => {

@@ -1,4 +1,4 @@
-import { matrixSum } from './matrixSum';
+import { matrixSum } from '../src/matrixSum.js';
 
 describe('matrixSum()', () => {
   test.each([

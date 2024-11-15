@@ -1,4 +1,4 @@
-import {getDerivative} from './derivative.js';
+import {getDerivative} from '../src/derivative.js';
 
 describe('getDerivative()', () => {
   test.each([

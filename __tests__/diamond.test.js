@@ -1,4 +1,4 @@
-import { diamond } from './diamond';
+import { diamond } from '../src/diamond.js';
 
 describe('diamond()', () => {
   test.each([

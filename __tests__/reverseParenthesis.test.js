@@ -1,4 +1,4 @@
-import { reverseParenthesis } from "./reverseParenthesis";
+import { reverseParenthesis } from "../src/reverseParenthesis.js";
 
 describe('reverseParenthesis()', () => {
   test.each([

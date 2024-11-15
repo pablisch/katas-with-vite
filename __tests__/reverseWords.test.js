@@ -1,4 +1,4 @@
-import reverseWords from './reverseWords';
+import reverseWords from '../src/reverseWords.js';
 
 describe('reverseWords()', () => {
   test('should return a string where the words are in reverse order to the input string', () => {

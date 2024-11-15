@@ -1,4 +1,4 @@
-import sumStrings from './sumStrings';
+import sumStrings from '../src/sumStrings.js';
 
 describe('sumStrings()', () => {
   test('should return the sum of teo numeric strings', () => {

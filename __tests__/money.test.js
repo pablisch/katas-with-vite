@@ -1,4 +1,4 @@
-import calculateYears from './money';
+import calculateYears from '../src/money.js';
 
 describe('calculateYears()', () => {
   test('should return the nimber of years needed to reach a set wealth', () => {

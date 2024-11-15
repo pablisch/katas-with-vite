@@ -1,4 +1,4 @@
-import { buildTower } from "./buildTower";
+import { buildTower } from "../src/buildTower.js";
 
 describe('buildTower()', () => {
   test.each([

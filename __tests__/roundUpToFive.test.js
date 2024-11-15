@@ -1,5 +1,5 @@
 import { describe } from 'vitest';
-import {roundUpToFive} from './roundUpToFive';
+import {roundUpToFive} from '../src/roundUpToFive.js';
 
 describe('roundUpToFive()', () => {
   test.each([

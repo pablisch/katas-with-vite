@@ -1,4 +1,4 @@
-import reverseArray from './reverseArray';
+import reverseArray from '../src/reverseArray.js';
 // import { test, describe, expect } from 'vitest';
 
 describe('reverseArray', () => {

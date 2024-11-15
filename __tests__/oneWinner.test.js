@@ -1,4 +1,4 @@
-import {declare_winner, Fighter} from './oneWinner';
+import {declare_winner, Fighter} from '../src/oneWinner.js';
 
 describe('declare_winner()', () => {
   test.each([

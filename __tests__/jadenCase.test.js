@@ -1,4 +1,4 @@
-import {jadenCase} from './jadenCase';
+import {jadenCase} from '../src/jadenCase.js';
 
 describe('jadenCase()', () => {
   test.each([

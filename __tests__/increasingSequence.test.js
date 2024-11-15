@@ -1,4 +1,4 @@
-import {increasingSequence} from './increasingSequence';
+import {increasingSequence} from '../src/increasingSequence.js';
 
 describe('increasingSequence()', () => {
   test.each([

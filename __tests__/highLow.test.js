@@ -1,4 +1,4 @@
-import highLow from './highLow';
+import highLow from '../src/highLow.js';
 
 describe('highLow', () => {
   test('should return two numbers separated by a single space, high to low', () => {

@@ -1,4 +1,4 @@
-import checkTheExam from './checkTheExam.js';
+import checkTheExam from '../src/checkTheExam.js';
 
 describe('checkTheExam', () => {
   test('should award +4 for each correct answer given only correct answers', () => {

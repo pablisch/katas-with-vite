@@ -1,4 +1,4 @@
-import {countChars} from './countChars';
+import {countChars} from '../src/countChars.js';
 
 describe('countChars()', () => {
   test.each([

@@ -1,4 +1,4 @@
-import helloName from './helloName';
+import helloName from '../src/helloName.js';
 
 describe('helloName', () => {
   test('should return "Hello, <name>!" where a valid name is given', () => {

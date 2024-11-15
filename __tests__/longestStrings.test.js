@@ -1,4 +1,4 @@
-import { longestStrings } from "./longestStrings";
+import { longestStrings } from "../src/longestStrings.js";
 
 describe('longestStrings()', () => {
   test.each([

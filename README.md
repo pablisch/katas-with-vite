@@ -22,16 +22,28 @@ These are generally one function solutions to small chalenges set by Codewars. I
 
 ## How to run ALL tests
 ```bash
-1. npm test # run tests
+npm test # with watch
 ```
 
-## How to run a single test
 ```bash
-1. jest <test-filename> # run single test
+npm test:run # single run
 ```
-Example: `jest greet.test.js`
 
-**Note:** the extension is not required.
+## How to run a single test file OR regex match
+```bash
+npx vitest --globals <test-filename OR regex-match> # run single test file or regex match with watch
+```
+Example: `npx vitest --globals hel` # currently this will only match 
+```bash
+npx vitest --globals hel # currently this will only match the file __tests__/helloName.test.js
+npx vitest --globals oun # would match two files: __tests__/countChars.test.js and __tests__/roundUpToFive.test.js
+```
+
+```bash
+npx vitest --run --globals <test-filename OR regex-match> # run single test file or regex match for a single run
+```
+
+`--reporter verbose` is also available
 
 ## How to run a single file
 

@@ -1,4 +1,4 @@
-import factorial from './factorial';
+import factorial from '../src/factorial.js';
 
 describe('factorial', () => {
   test('should return the factorial of an input from 1 to 12', () => {
