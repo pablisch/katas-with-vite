@@ -51,3 +51,59 @@ As the files are mostly single functions designed to pass a specific abstract te
 ```bash
 1. node <filename> # run file
 ```
+
+## Writing Tests
+
+All the forms of test writing listed below can be seen in [forWhomTheBellsToll.test.js](./__tests__/forWhomTheBellTolls.test.js).
+
+### Single tests
+
+Single tests are written using Vitest syntax which is almost identical to Jest. The use of globals when test running means that there is no need to import `describe`, `test`, etc.
+
+```javascript
+describe('forWhomTheBellTolls', () => {
+    test('should return a symmetrical array when n is passed in', () => {
+        expect(forWhomTheBellTolls(1)).toEqual([1])
+    })
+})
+```
+
+### Parameterised tests
+
+Parameterised tests are also written using Vitest syntax but use a single test to run multiple test examples. The example below uses the `%d` syntax to include the number (`%d`) in the test description to clearly indicate which example is being tested
+
+```javascript
+describe('forWhomTheBellTolls parameterised tests', () => {
+    test.each([
+        [1, [1]],
+        [2, [2, 2]],
+        [3, [3, 4, 3]],
+    ])('should return a symmetrical array when n has the value of %d', (n, expectedArray) => {
+        expect(forWhomTheBellTolls(n)).toEqual(expectedArray)
+    })
+})
+```
+
+### Parameterised tests with dynamic test description
+
+The example below uses the `%d` syntax to include the number (`%d`) and `%s` (for string) in the test description to clearly indicate both the integer and the resulting array in the test description and show details of which example is being tested. This can be a bit sketchy and in this example the inputs needed to be reversed to make the test description read out as I wanted it to.
+
+```javascript
+describe('forWhomTheBellTolls parameterised tests', () => {
+    test.each([
+        [[1], 1],
+        [[2, 2], 2],
+        [[3, 4, 3], 3],
+    ])('should return a symmetrical array, %s when n has the value of %d', (expectedArray, n) => {
+        expect(forWhomTheBellTolls(n)).toEqual(expectedArray)
+    })
+})
+```
+
+The read out for passing tests with the above format would like like this:
+```javascript`
+   ✓ forWhomTheBellTolls parameterised tests (8)
+     ✓ should return a symmetrical array, [ 1 ] when n has the value of 1
+     ✓ should return a symmetrical array, [ 2, 2 ] when n has the value of 2
+     ✓ should return a symmetrical array, [ 3, 4, 3 ] when n has the value of 3
+```

@@ -14,7 +14,7 @@ describe('howOld()', () => {
     [2000, 2001, "You are 1 year old."],
     [2000, 2002, "You are 2 years old."],
     [1990, 2000, "You are 10 years old."],
-  ])('should return descrbing age at the specified year', (dob, year, expectedResult) => {
+  ])('should return describing age at the specified year', (dob, year, expectedResult) => {
     // Act 
     const result = howOld(dob, year);
 
